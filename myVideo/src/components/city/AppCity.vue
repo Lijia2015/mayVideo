@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		
-		<!--字母列表-->
+		<!--城市首字母列表-->
 		<div class="clearfix">
 			<div class="code clearfix">
 				<span class="city-code">按字母排序</span>
