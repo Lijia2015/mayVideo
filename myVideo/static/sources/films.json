@@ -1,0 +1,9 @@
+{
+	"data":[
+		{"id":1,"name":"妖猫传","price":30,"num":0,"isSelected":true},
+		{"id":2,"name":"芳华","price":30,"num":0,"isSelected":true},
+		{"id":3,"name":"妖铃铃","price":30,"num":0,"isSelected":true},
+		{"id":4,"name":"功夫2","price":30,"num":0,"isSelected":true},
+		{"id":5,"name":"史莱克正传","price":30,"num":0,"isSelected":true}
+	]
+}

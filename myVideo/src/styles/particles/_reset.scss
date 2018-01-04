@@ -1,0 +1,27 @@
+html,body,#app{
+    
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul,li{
+    
+    font-size: 0.15rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
