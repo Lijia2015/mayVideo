@@ -24,7 +24,7 @@
 		components:{
 			AppBanner,
 			AppNowPlaying,
-			AppToPlaying
+			AppToPlaying,
 		}
 	}
 </script>

@@ -14,6 +14,7 @@
   		<router-view></router-view>
   	</keep-alive>
   	
+  	<back-top></back-top>
   	
   	
     
@@ -24,6 +25,7 @@
 	
 	import AppHeader from './components/header/AppHeader.vue';
 	import AsideNav from './components/nav/AsideNav.vue';
+	import BackTop from './components/backTop/AppBackTop';
 	
 	export default {
 	  name: 'app',
@@ -32,7 +34,7 @@
 	  		isSideShow:false,
 	  	};
 	  },
-	  components:{AppHeader,AsideNav},
+	  components:{AppHeader,AsideNav,BackTop},
 	  methods:{
 	  	
 	  	showSide(){
