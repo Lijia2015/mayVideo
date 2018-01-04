@@ -28,7 +28,7 @@
 			
 			return {
 				films:[],
-				action:'更多热映电影',
+				action:{name:'更多热映电影',style:'now-playing'},
 				routerName:'detail'
 			};
 		},

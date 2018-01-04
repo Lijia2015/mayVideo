@@ -30,7 +30,7 @@
 			
 			return {
 				films:[],
-				action:'更多即将上映电影',
+				action:{name:'更多即将上映电影',style:'coming-soon'},
 				routerName:'detail'
 			};
 		},

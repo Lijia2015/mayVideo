@@ -61,7 +61,7 @@
 			return {
 				isOver:false,
 				loading:false,
-				type:'now-playing',
+				type:'',
 				count:8,
 				page:1,
 				films:[],
@@ -122,7 +122,7 @@
 				this.films = [];
 				this.isLoading = false;
 				this.isOver = false;
-				
+				this.$route.params.id = name;
 				this.getData();
 				
 			},
@@ -137,10 +137,47 @@
 			},
 			jumpDetail(params){
 				
+				this.loading = true;
+				
 				this.$router.push({name:'detail',params:{id:params.id}})
+				
 			}
 			
 		},
+		
+		created(){
+			
+			
+		},
+
+		beforeRouteEnter (to, from, next){
+			next(vm =>{
+				
+				if(vm.$route.params.id){
+					
+					vm.type = vm.$route.params.id;
+					
+				}else{
+					
+					if(!vm.type){
+						
+						vm.type = 'now-playing'
+					}
+					
+				}
+				
+				vm.loading = false;
+				
+				return true;
+			})
+		},
+		beforeRouteLeave (to, from, next) {
+			
+			this.loading = true;
+			
+			next(true)
+		}
+		
 	}
 	
 </script>

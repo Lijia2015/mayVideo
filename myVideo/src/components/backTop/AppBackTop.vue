@@ -16,16 +16,14 @@
 		},
 		methods:{
 			backTop(){
-				
 				document.documentElement.scrollTop = 0;
-				
-			}
+			},
 		},
 		mounted(){
 			
 			var that = this;
 			
-			window.addEventListener('scroll',(e)=>{
+			window.addEventListener('scroll',()=>{
 				
 				if(window.scrollY > 200){
 					
@@ -34,6 +32,7 @@
 				}else{
 					that.show = false;
 				}
+				
 			})
 		}
 	}

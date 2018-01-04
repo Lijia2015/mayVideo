@@ -1,13 +1,19 @@
 <template>
-	<div class="app-action">
-		<span>{{action}}</span>
+	<div class="app-action" @click="toAction(action)">
+		<span>{{action.name}}</span>
 	</div>
 </template>
 
 <script>
 	export default{
 		name:'app-action',
-		props:['action']
+		props:['action'],
+		methods:{
+			toAction(action){
+				
+				this.$router.push({name:'movie',params:{id:action.style}})
+			}
+		},
 	}
 </script>
 

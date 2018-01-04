@@ -10,7 +10,7 @@
   		<div v-if="isSideShow" @click="showSide" class="mask app-box"></div>
   	</transition>
   	
-  	<keep-alive include='app-main,app-city'>
+  	<keep-alive include='app-main,app-city,app-movie'>
   		<router-view></router-view>
   	</keep-alive>
   	

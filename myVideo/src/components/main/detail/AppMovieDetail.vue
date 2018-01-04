@@ -94,8 +94,6 @@
 		},
 		created(){
 			
-			console.log(this.$route.params.id,1354645)
-			
 			this.getData(this.$route.params.id)
 		}
 		
